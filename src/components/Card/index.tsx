@@ -1,9 +1,11 @@
 import {FC} from "react";
 import styles from './Card.module.scss';
 
+
 interface CardProps {
     number: number;
 }
+
 
 const Card: FC<CardProps> = ({number}) => {
     return (
@@ -13,5 +15,6 @@ const Card: FC<CardProps> = ({number}) => {
         </div>
     )
 }
+
 
 export default Card;

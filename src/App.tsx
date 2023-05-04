@@ -1,3 +1,5 @@
+import {v4 as uuidv4} from 'uuid';
+
 import Card from "components/Card";
 
 
@@ -9,8 +11,8 @@ function App() {
         <section className="App">
             {
                 cards.map(
-                    (_, i) =>
-                        <Card key={i} number={i + 1}/>
+                    (_, index) =>
+                        <Card key={uuidv4()} number={index + 1}/>
                 )
             }
         </section>
